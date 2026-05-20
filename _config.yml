@@ -1,2 +1,3 @@
-sidebar:
-  - about
+header_pages:
+  - README.md
+  - about.md
