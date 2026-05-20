@@ -2,8 +2,35 @@ body {
   background-color: powderblue;
 }
 h1 {
-  color: blue;
+  color: red;
 }
 p {
   color: red;
+  background-color: blue;
+}
+.nav {
+  container-type: inline-size;
+  display: flex;
+  column-gap: 1em;
+  align-items: center;
+}
+.nav-button {
+  color: gray;
+}
+
+.head-img {
+  width: 100%;
+}
+
+.nav-menu-short {
+  content-visibility: hidden;
+}
+
+@container (max-width: 300px) {
+  .nav-menu-buttons {
+    content-visibility: hidden;
+  }
+  .nav-menu-short {
+    content-visibility: visible;
+  }
 }
