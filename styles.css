@@ -16,10 +16,16 @@ p {
 }
 .nav-button {
   color: gray;
+  text-decoration: none;
 }
 
 .head-img {
   width: 100%;
+}
+
+.nav-menu-buttons{
+  column-gap: 1em;
+  display: flex;
 }
 
 .nav-menu-short {
