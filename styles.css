@@ -1,10 +1,14 @@
 body {
   background-color: #EFEFEF;
+  margin: 0px;
+  padding: 0px;
 }
 
 .nav {
   container-type: inline-size;
   display: flex;
+  position: fixed;
+  z-index:100;
   column-gap: 2em;
   align-items: center;
   width: 100%;
