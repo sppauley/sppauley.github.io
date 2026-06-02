@@ -1,28 +1,21 @@
 body {
-  background-color: powderblue;
-}
-h1 {
-  color: red;
-  height: 50px;
-}
-p {
-  color: red;
-  background-color: blue;
+  background-color: #333333;
 }
 .nav {
   container-type: inline-size;
   display: flex;
   column-gap: 1em;
   align-items: center;
-  position: fixed;
-  top: 0;
-  z-index: 1030;
   width: 100%;
   height: 4em;
-  background-color: whitesmoke;
+}
+.nav-title {
+  color: #F27F3D;
+  font-size: 2em;
+  font-weight: bold;
 }
 .nav-button {
-  color: gray;
+  color: #EFEFEF;
   text-decoration: none;
 }
 
