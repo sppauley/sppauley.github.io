@@ -1,9 +1,11 @@
 body {
   background-color: #EFEFEF;
 }
+
 h1 {
   color: #2D3F54;
 }
+
 .nav {
   container-type: inline-size;
   display: flex;
@@ -13,16 +15,23 @@ h1 {
   height: 4em;
   background-color: #2D3F54;
 }
+
 .nav-title {
   color: #FF8F5C;
   font-size: 2em;
   font-weight: bold;
   align-self: center;
 }
+
 .nav-button {
   color: #EFEFEF;
   text-decoration: none;
   align-self: center;
+}
+
+.nav-button:hover {
+  color: #FF8F5C;
+  text-decoration: underline;
 }
 
 .nav-menu-buttons{
@@ -39,9 +48,6 @@ h1 {
   width: 100%;
 }
 
-.home-head {
-}
-
 .head-desc {
   margin: 1em;
 }
@@ -50,6 +56,10 @@ h1 {
   color: #2D3F54;
   font-family: Georgia, serif;
   font-size: 1em;
+}
+
+.footer {
+  background-color: #2D3F54;
 }
 
 @container (max-width: 300px) {
