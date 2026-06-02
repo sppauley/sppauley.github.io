@@ -5,6 +5,7 @@ body {
 }
 
 .nav {
+  padding-left: 15%;
   container-type: inline-size;
   display: flex;
   position: fixed;
@@ -52,8 +53,8 @@ body {
 }
 
 .head-desc {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-top: 20px;
 }
 
@@ -80,8 +81,8 @@ body {
   width: 100%;
   background-color: #2D3F54;
   padding-bottom: 5px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 .footer-entry {
