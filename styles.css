@@ -47,8 +47,14 @@ body {
   content-visibility: hidden;
 }
 
+.home-head {
+  container-type: inline-size;
+  display: flex;
+}
+
 .head-img {
-  width: 100%;
+  width: 300px;
+
 }
 
 .head-desc {
