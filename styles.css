@@ -5,7 +5,7 @@ body {
 }
 
 .nav {
-  padding-left: 15%;
+  padding-left: 20%;
   container-type: inline-size;
   display: flex;
   position: fixed;
@@ -16,6 +16,7 @@ body {
   height: 58px;
   background-color: #2D3F54;
   padding-bottom: 5px;
+  margin-left: 0px;
 }
 
 .nav-title {
@@ -23,6 +24,8 @@ body {
   font-size: 28px;
   font-weight: bold;
   align-self: center;
+  margin-left: 0px;
+  padding-left: 0px;
 }
 
 .nav-button {
