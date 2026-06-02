@@ -9,7 +9,7 @@ h1 {
 .nav {
   container-type: inline-size;
   display: flex;
-  column-gap: 1em;
+  column-gap: 2em;
   align-items: center;
   width: 100%;
   height: 4em;
@@ -35,7 +35,7 @@ h1 {
 }
 
 .nav-menu-buttons{
-  column-gap: 1em;
+  column-gap: 1.5em;
   display: flex;
   align-self: center;
 }
@@ -60,6 +60,7 @@ h1 {
 
 .footer {
   background-color: #2D3F54;
+  padding: 1em;
 }
 
 @container (max-width: 300px) {
