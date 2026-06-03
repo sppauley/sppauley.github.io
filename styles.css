@@ -81,10 +81,8 @@ body {
   container-type: inline-size;
   display: flex;
   column-gap: 2em;
-  align-items: center;
   width: 60%;
   background-color: #2D3F54;
-  padding-bottom: 5px;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -93,6 +91,7 @@ body {
   column-gap: 1.5em;
   font-size: 18px;
   font-family: Helvetica, sans-serif;
+  color: #EFEFEF;
 }
 
 .footer-button {
