@@ -97,6 +97,7 @@ body {
 .footer-button {
   color: #EFEFEF;
   align-self: center;
+  text-decoration: none;
 }
 
 .footer-button:hover {
