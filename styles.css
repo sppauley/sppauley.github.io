@@ -77,6 +77,23 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+.button-blue {
+  background-color: #2D3F54;
+  color: #EFEFEF;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button-blue:hover {
+  background-color: #004C94;
+}
+
 .footer-links {
   container-type: inline-size;
   display: flex;
