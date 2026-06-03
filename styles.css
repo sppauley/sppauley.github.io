@@ -43,7 +43,7 @@ body {
 }
 
 .nav-menu-buttons{
-  column-gap: 1.5em;
+  column-gap: 40px;
   display: flex;
   align-self: center;
 }
