@@ -3,18 +3,48 @@
 
 <head>
     <title>Sean Pauley - About</title>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="nav">
-        <div><p class="nav-title">Sean Pauley</p></div>
-        <div class="nav-menu-buttons">
-            <a class="nav-button" href="/index.html" style="text-decoration: underline"><b>Home</b></a>
-            <a class="nav-button" href="/racial-justice.html">Racial Justice</a>
-            <a class="nav-button" href="/methods.html">Methods</a>
-            <a class="nav-button" href="/cv.html">CV</a>
+
+    <script>
+        function dropdown_expand(id, name) {
+            dropdown = document.getElementById(id);
+            dropdown.innerHTML = name + '<i class="material-icons" style="position: relative; top: 4px">arrow_drop_up</i>';
+            left = dropdown.getBoundingClientRect().left;
+            document.getElementById(id+"-menu").style.display = "block";
+            document.getElementById(id+"-menu").style.left = left + "px";
+            console.log("Expand")
+            dropdown.onclick = function() { dropdown_retract(id, name); }
+        }
+        function dropdown_retract(id, name) {
+            dropdown = document.getElementById(id);
+            console.log('Retract')
+            console.log(id)
+            console.log(name)
+        }
+    </script>
+
+    <div id="nav-container">
+        <div class="nav">
+            <div><p class="nav-title">Sean Pauley</p></div>
+            <div class="nav-menu-buttons">
+                <a class="nav-button" href="/index.html" style="text-decoration: underline"><b>Home</b></a>
+                <a class="nav-button" href="/racial-justice.html">Research</a>
+                <a class="nav-button" id="resources" type="button" onclick="dropdown_expand('resources', 'Resources')">Resources<i class="material-icons" style="position: relative; top: 4px">arrow_drop_down</i></a>
+                <a class="nav-button" href="/cv.html">CV</a>
+            </div>
+        </div>
+
+        <div id="resources-menu" class="nav-dropdown">
+            <p style="color: white;">Item</p>
+            <p>Item</p>
+            <p>Item</p>
+            <p>Item</p>
         </div>
     </div>
+
 </head>
 
 <body>

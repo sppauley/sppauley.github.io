@@ -4,6 +4,10 @@ body {
   padding: 0px;
 }
 
+.nav-container {
+  position: fixed;
+}
+
 .nav {
   padding-left: 20%;
   container-type: inline-size;
@@ -50,6 +54,12 @@ body {
 
 .nav-menu-short {
   content-visibility: hidden;
+}
+
+.nav-dropdown {
+  background-color: #2D3F54;
+  display: none;
+  position: fixed;
 }
 
 .head-img {
