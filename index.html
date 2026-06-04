@@ -13,16 +13,17 @@
             dropdown = document.getElementById(id);
             dropdown.innerHTML = name + '<i class="material-icons" style="position: relative; top: 4px">arrow_drop_up</i>';
             left = dropdown.getBoundingClientRect().left;
+            bottom = dropdown.getBoundingClientRect().bottom;
             document.getElementById(id+"-menu").style.display = "block";
             document.getElementById(id+"-menu").style.left = left + "px";
-            console.log("Expand")
+            document.getElementById(id+"-menu").style.top = bottom + "px";
             dropdown.onclick = function() { dropdown_retract(id, name); }
         }
         function dropdown_retract(id, name) {
             dropdown = document.getElementById(id);
-            console.log('Retract')
-            console.log(id)
-            console.log(name)
+            dropdown.innerHTML = name + '<i class="material-icons" style="position: relative; top: 4px">arrow_drop_down</i>';
+            document.getElementById(id+"-menu").style.display = "none";
+            dropdown.onclick = function() { dropdown_expand(id, name); }
         }
     </script>
 
