@@ -33,7 +33,7 @@
             <div class="nav-menu-buttons">
                 <a class="nav-button" href="/index.html">Home</a>
                 <a class="nav-button" href="/racial-justice.html">Research</a>
-                <a class="nav-button" id="resources" type="button" style="text-decoration: underline" onclick="dropdown_expand('resources', 'Resources')"><b>Resources</b><i class="material-icons" style="position: relative; top: 4px">arrow_drop_down</i></a>
+                <a class="nav-button" id="resources" type="button" onclick="dropdown_expand('resources', 'Resources')">Resources<i class="material-icons" style="position: relative; top: 4px">arrow_drop_down</i></a>
                 <a class="nav-button" href="/cv.html">CV</a>
             </div>
         </div>
@@ -75,8 +75,10 @@
         <p class="desc-text"><ul><li><p class="desc-text">Each observation has its own row (ex. a survey respondent in a given year)</p></li><li><p class="desc-text">Each variable has its own column (ex. a respondent's age)</p></li><li><p class="desc-text">Each type of observational unit has its own table (ex. survey respondents vs social media posts)</p></li></ul></p>
         <p class="desc-text">Tidy data is useful because all data can essentially be treated the same, since the data contains only one type of observational unit (in this case, cities on a given day). Splitting the data can be done by dividing it into even chunks. This method scales well for large datasets, since you do not even need to read all the data into memory at the same time to divide it like this.</p>
         <p class="desc-text">If your data structure <i>isn't</i> tidy, this becomes more difficult. Often, you need to develop custom code to split the dataset after reading it all into memory. These solutions are rarely uniform.</p>
-        <p class="desc-text"></p>
+        <p class="desc-text">After you divide your data, the next step is to ensure that your code is reusable for multiple jobs with different datasets. This greatly increases the speed of writing your code and ensures you only have to debug your scripts in one place. Ideally, your code revolves around a file parameter that you can send to a set of resources through HTCondor and read/process in your scripts.</p>
+        <p class="desc-text">For an example of this in action, see my <a class="desc-link" href="https://github.com/UW-Madison-CCCR/CHTC-Template">sample project.</a></p>
         <p><br></p>
+        <p class="desc-text"></p>
     </div>
 </div>
 
