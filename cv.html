@@ -2,19 +2,50 @@
 <html>
 
 <head>
-    <title>Sean Pauley - CV</title>
+    <title>Sean Pauley - About</title>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <div class="nav">
-        <div><p class="nav-title">Sean Pauley</p></div>
-        <div class="nav-menu-buttons">
-            <a class="nav-button" href="/index.html">Home</a>
-            <a class="nav-button" href="/racial-justice.html">Racial Justice</a>
-            <a class="nav-button" href="/methods.html">Methods</a>
-            <a class="nav-button" href="/cv.html" style="text-decoration: underline"><b>CV</b></a>
+
+    <script>
+        function dropdown_expand(id, name) {
+            dropdown = document.getElementById(id);
+            dropdown.innerHTML = name + '<i class="material-icons" style="position: relative; top: 4px">arrow_drop_up</i>';
+            left = dropdown.getBoundingClientRect().left;
+            bottom = dropdown.getBoundingClientRect().bottom;
+            document.getElementById(id+"-menu").style.display = "block";
+            document.getElementById(id+"-menu").style.left = left + "px";
+            document.getElementById(id+"-menu").style.top = bottom + "px";
+            dropdown.onclick = function() { dropdown_retract(id, name); }
+        }
+        function dropdown_retract(id, name) {
+            dropdown = document.getElementById(id);
+            dropdown.innerHTML = name + '<i class="material-icons" style="position: relative; top: 4px">arrow_drop_down</i>';
+            document.getElementById(id+"-menu").style.display = "none";
+            dropdown.onclick = function() { dropdown_expand(id, name); }
+        }
+    </script>
+
+    <div id="nav-container">
+        <div class="nav">
+            <div><p class="nav-title">Sean Pauley</p></div>
+            <div class="nav-menu-buttons">
+                <a class="nav-button" href="/index.html">Home</a>
+                <a class="nav-button" href="/racial-justice.html">Research</a>
+                <a class="nav-button" id="resources" type="button" onclick="dropdown_expand('resources', 'Resources')">Resources<i class="material-icons" style="position: relative; top: 4px">arrow_drop_down</i></a>
+                <a class="nav-button" href="/cv.html" style="text-decoration: underline"><b>CV</b></a>
+            </div>
+        </div>
+
+        <div id="resources-menu" class="nav-dropdown">
+            <p><a class="dropdown-item" href="/resources/overview.html">Overview</a>
+            <p><a class="dropdown-item" >High-Throughput Computing</a></p>
+            <p><a class="dropdown-item" >Bayesian Analysis</a></p>
+            <p><a class="dropdown-item" >Survey Methods</a></p>
         </div>
     </div>
+
 </head>
 
 <body>
@@ -29,7 +60,13 @@
         <p class="desc-text"><b>B.A. in New Media Studies</b><br><i>Alma College, May 2022</i><br>Minor in Political Science</p>
         <p><br></p>
     </div>
+
+    <div class="head-desc">
+        <a class="button-blue" href="files/CV.pdf" download="SeanPauleyCV.pdf">Download CV (PDF)</a>
+    </div>
 </div>
+
+
 
 </body>
 
