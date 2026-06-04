@@ -78,6 +78,13 @@
         <p class="desc-text">After you divide your data, the next step is to ensure that your code is reusable for multiple jobs with different datasets. This greatly increases the speed of writing your code and ensures you only have to debug your scripts in one place. Ideally, your code revolves around a file parameter that you can send to a set of resources through HTCondor and read/process in your scripts.</p>
         <p class="desc-text">For an example of this in action, see my <a class="desc-link" href="https://github.com/UW-Madison-CCCR/CHTC-Template">sample project.</a></p>
         <p><br></p>
+        <h1 class="h1-blue">Dividing Your Processes</h1>
+        <p class="desc-text">In some cases, however, you might need to run multiple models using all your data. This can naturally take a lot of time, since you would otherwise need to run every model sequentially. However, with high-throughput computing, you can simply run all models with each of the parameters you want to test.</p>
+        <p class="desc-text">For instance, in a project in which I proposed Bayesian alternatives to conventional mixture models of people’s media consumption, instead of testing all the different permutations separately for each combination of my four distributions, ten class sizes, and three sets of variables, I ran them all at once in a matter of minutes. (The infrastructure for this project can be found <a class="desc-link" href="https://github.com/UW-Madison-CCCR/Mixture-Model-Methods">here</a>.)</p>
+        <p class="desc-text">This is also useful for machine learning or AI projects that require hyperparameter tuning or different prompts. The Center for High-Throughput Computing <a class="desc-link" href="https://chtc.cs.wisc.edu/uw-research-computing/machine-learning-htc">encourages</a> distributing different AI/ML models over its systems to run simultaneously.</p>
+        <p class="desc-text">In these cases, modify your functions to take arguments for your model parameters, not a subset of your data. HTCondor supports multiple parameters, and my Bayesian mixture model project used three.</p>
+        <p><br></p>
+        <h1 class="h1-blue">Additional Recommendations and Resources</h1>
         <p class="desc-text"></p>
     </div>
 </div>
