@@ -92,6 +92,17 @@ body {
   font-size: 18px;
 }
 
+.desc-link {
+  color: #004C94;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+.desc-link:hover {
+  color: #FF8F5C;
+}
+
 .footer {
   background-color: #2D3F54;
   width: 100%;
