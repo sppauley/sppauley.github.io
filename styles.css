@@ -60,6 +60,21 @@ body {
   background-color: #2D3F54;
   display: none;
   position: fixed;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.dropdown-item {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  color: #EFEFEF;
+  text-decoration: none;
+}
+
+.dropdown-item:hover {
+  text-decoration: underline;
+  color: #FF8F5C;
 }
 
 .head-img {
