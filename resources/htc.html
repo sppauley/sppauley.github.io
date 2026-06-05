@@ -76,7 +76,7 @@
         <p class="desc-text">Tidy data is useful because all data can essentially be treated the same, since the data contains only one type of observational unit (in this case, cities on a given day). Splitting the data can be done by dividing it into even chunks. This method scales well for large datasets, since you do not even need to read all the data into memory at the same time to divide it like this.</p>
         <p class="desc-text">If your data structure <i>isn't</i> tidy, this becomes more difficult. Often, you need to develop custom code to split the dataset after reading it all into memory. These solutions are rarely uniform.</p>
         <p class="desc-text">After you divide your data, the next step is to ensure that your code is reusable for multiple jobs with different datasets. This greatly increases the speed of writing your code and ensures you only have to debug your scripts in one place. Ideally, your code revolves around a file parameter that you can send to a set of resources through HTCondor and read/process in your scripts.</p>
-        <p class="desc-text">For an example of this in action, see my <a class="desc-link" href="https://github.com/UW-Madison-CCCR/CHTC-Template">sample project.</a></p>
+        <p class="desc-text">For an example of this in action, see my <a class="desc-link" href="https://github.com/UW-Madison-CCCR/CHTC-Template">sample project and walkthrough.</a></p>
         <p><br></p>
         <h1 class="h1-blue">Dividing Your Processes</h1>
         <p class="desc-text">In some cases, however, you might need to run multiple models using all your data. This can naturally take a lot of time, since you would otherwise need to run every model sequentially. However, with high-throughput computing, you can simply run all models with each of the parameters you want to test.</p>
@@ -85,11 +85,22 @@
         <p class="desc-text">In these cases, modify your functions to take arguments for your model parameters, not a subset of your data. HTCondor supports multiple parameters, and my Bayesian mixture model project used three.</p>
         <p><br></p>
         <h1 class="h1-blue">Additional Recommendations and Resources</h1>
-        <p class="desc-text"></p>
+        <p class="desc-text">Before sending all your jobs to your institution’s HTCondor or other high-throughput system, make sure you test your jobs locally. This ensures that computational resources are not being wasted on a simple bug that affects all your jobs. To take this a step further, if you are running jobs that you expect to run into different problems, create a testing protocol for yourself where you run through a small battery of diverse test cases.</p>
+        <p class="desc-text">Finally, if you believe that your jobs will have a long runtime even after splitting your data or processes, consider checkpointing your jobs. The Center for High-Throughput Computing provides <a class="desc-link" href="https://htcondor.readthedocs.io/en/latest/users-manual/self-checkpointing-applications.html">guidance</a> on this, but essentially, you can store progress in an external file in case the job fails or is forced to move to a new resource cluster.</p>
+        <p><br></p>
     </div>
 </div>
 
-
+<div class="footer">
+    <div class="footer-links">
+        <p style="margin-bottom: 0px; padding-bottom: 0px;" class="footer-entry"><i style="color:EFEFEF" class="fa fa-envelope"></i>  Email: <a class="footer-button" href="mailto:sppauley@wisc.edu">sppauley@wisc.edu</a></p>
+    </div>
+    <div class="footer-links">
+        <p class="footer-entry"><i style="color:#EFEFEF" class="fa fa-github"></i>  <a class="footer-button" href="https://github.com/sppauley">GitHub</a></p>
+        <p class="footer-entry"><i style="color:#EFEFEF" class="fa fa-linkedin-square"></i>  <a class="footer-button" href="https://www.linkedin.com/feed/">LinkedIn</a></p>
+        <p class="footer-entry"><i style="color:#EFEFEF" class="fa fa-google"></i>  <a class="footer-button" href="https://scholar.google.com/citations?user=cI2qsZMAAAAJ">Google Scholar</a></p>
+    </div>
+</div>
 
 </body>
 
