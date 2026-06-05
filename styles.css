@@ -103,6 +103,12 @@ body {
   color: #FF8F5C;
 }
 
+.desc-list {
+  color: #2D3F54;
+  font-family: Georgia, serif;
+  font-size: 18px;
+}
+
 .footer {
   background-color: #2D3F54;
   width: 100%;
